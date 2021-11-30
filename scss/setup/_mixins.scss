@@ -1,0 +1,98 @@
+/* Mixins
+-------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------- */
+@mixin background_fade($bg-color, $bg-color-hover, $text-color, $text-color-hover, $transition-duration, $transition-timing-function) {
+	transition: $transition-duration $transition-timing-function;
+	background-color: $bg-color;
+	color: $text-color !important;
+
+	&:hover {
+		color: $text-color-hover !important;
+		background-color: $bg-color-hover;
+	}
+}
+
+@mixin background_horizontal_slide($bg-color, $bg-color-hover, $text-color, $text-color-hover, $transition-duration, $transition-timing-function) {
+	position: relative;
+	z-index: 1;
+	background-color: $bg-color;
+	color: $text-color !important;
+	transition: $transition-duration $transition-timing-function;
+
+	&:before {
+		position: absolute;
+		content: '';
+		display: block;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		width: 0%;
+		height: 100%;		
+		background-color: $bg-color-hover;
+		transition: $transition-duration $transition-timing-function;
+	}
+
+	&:hover {
+		color: $text-color-hover !important;
+		&:before {
+			width: 100%;
+		}
+	}
+}
+
+@mixin background_vertical_slide($bg-color, $bg-color-hover, $text-color, $text-color-hover, $transition-duration, $transition-timing-function) {
+	position: relative;
+	z-index: 1;
+	background-color: $bg-color;
+	color: $text-color !important;
+	transition: $transition-duration $transition-timing-function;
+
+	&:before {
+		position: absolute;
+		content: '';
+		display: block;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		width: 100%;
+		height: 0%;
+		background-color: $bg-color-hover;
+		transition: $transition-duration $transition-timing-function;
+	}
+
+	&:hover {
+		color: $text-color-hover !important;
+		&:before {
+			height: 100%;
+		}
+	}
+}
+
+@mixin background_expand_slide($bg-color, $bg-color-hover, $text-color, $text-color-hover, $transition-duration, $transition-timing-function) {
+	position: relative;
+	z-index: 1;
+	background-color: $bg-color;
+	color: $text-color !important;
+	transition: $transition-duration $transition-timing-function;
+
+	&:before {
+		position: absolute;
+		content: '';
+		display: block;
+		top: 0;
+		left: 50%;
+		z-index: -1;
+		width: 0%;
+		height: 100%;
+		background-color: $bg-color-hover;
+		transition: $transition-duration $transition-timing-function;
+	}
+
+	&:hover {
+		color: $text-color-hover !important;
+		&:before {
+			left: 0;
+			width: 100%;
+		}
+	}
+}

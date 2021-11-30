@@ -1,0 +1,32 @@
+/* ----------------------------------------------------------------------------------
+
+NS CSS
+
+---------------------------------------------------------------------------------- */
+
+// Vendor Styles
+@import "vendors/normalize";
+@import "vendors/boilerplate";
+@import "vendors/slick-lightbox"; // Plugin author css: Enable if required.
+@import "vendors/ns-fade"; // Plugin author css: Enable if required.
+
+// Default Styles
+@import "setup/variables";
+@import "setup/animations";
+@import "setup/mixins";
+@import "setup/base";
+
+// Part Styles
+@import "parts/header";
+@import "parts/hero";
+@import "parts/footer";
+@import "parts/loading-screen";
+@import "parts/content-modules";
+
+// Plugins Styles
+@import "plugins/ns-slick";
+@import "plugins/ns-slick-lightbox"; // Turn on for custom styles
+
+// Page Styles
+@import "pages/home";
+@import "pages/404";

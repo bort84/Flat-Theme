@@ -1,0 +1,32 @@
+/* Content Module Styles
+-------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------- */
+.content-module {
+	margin: $m-margin 0;
+	padding: 0 $s-pad;
+	@media screen and (min-width: $s-tablet) {
+		margin: $l-margin 0;
+	}
+}
+
+#cta {
+	> div {
+		text-align: center;
+		
+		> div {
+			border: 1px solid $border-one;
+			padding: $s-pad;
+			@media screen and (min-width: $s-tablet) {
+				padding: $m-pad;
+			}
+		}
+	}
+
+	.button {
+		margin-top: 30px;
+	}
+
+	h1,h2,h3,h4,h5,h6 {
+		margin-top: 0; 
+	}
+}

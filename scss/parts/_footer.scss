@@ -1,0 +1,37 @@
+/* Footer Styles
+-------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------- */
+footer {
+	background: $background-one;
+	padding: 150px $m-pad - 10px $m-pad $m-pad;
+	text-align: center;
+	@media screen and (min-width: $s-tablet) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		flex-direction: row-reverse;
+	}
+
+	.social-nav {
+		margin-bottom: $m-margin;
+		@media screen and (min-width: $s-tablet) {
+			margin-bottom: 0;
+		}
+
+		li {
+			display: inline-block;
+			margin: 0 10px;
+		}
+
+		a {
+			color: $text-two;
+			text-decoration: none;
+			font-size: 24px;
+		}
+	}
+
+	a, p {
+		color: #fff;
+		margin: 0;
+	}
+}

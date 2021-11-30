@@ -1,0 +1,119 @@
+/* Header Styles
+-------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------- */
+header {
+	position: relative;
+	z-index: 10;
+	width: 100%;
+	background: #000;
+	@media screen and (min-width: $s-tablet) {
+		background: transparent;
+		position: fixed;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		transition: .25s linear;
+	}
+
+	&.active {
+		background: rgba(0,0,0, .8);
+	}
+}
+
+.logo {
+	padding: $s-pad 0 $s-pad $s-pad;
+	@media screen and (min-width: $l-tablet) {
+		padding: $s-pad 0 $s-pad $m-pad;
+	}
+}
+
+.hamburger-menu {
+	position: absolute;
+	top: 32px;
+	right: 14px;
+	cursor: pointer;
+	@media screen and (min-width: $s-tablet) {
+		display: none;
+	}
+
+	span {
+		display: block;
+		position: relative;
+		width: 23px;
+		height: 2px;
+		margin: 6px;
+		background-color: $background-two;
+		-webkit-transition: all 0.3s;
+		transition: all 0.3s;
+	}
+
+	&.open {
+		.bun.top {
+		  	top: 10px;
+		  	transform: rotate(-45deg);
+		}
+
+		.patty {
+		  	background: none !important;
+		}
+
+		.bun.bottom {
+		  	top: -6px;
+		  	transform: rotate(45deg);
+		}
+	}
+}
+
+.main-nav {
+	display: none;
+	text-align: center;
+	border-top: 1px solid #fff; 
+	@media screen and (min-width: $s-tablet) {
+		display: block !important;
+		border-top: none; 
+	}
+	@media screen and (min-width: $l-tablet) {
+		padding-right: $m-pad - 20px;
+	}
+
+	li {
+		@media screen and (min-width: $s-tablet) {
+			display: inline-block;
+			margin: 0 20px;
+		}
+	}
+
+	a {
+		display: block;
+		padding: 10px $s-pad; 
+		color: $text-two;
+		text-decoration: none;
+		transition: .15s linear;
+		@media screen and (min-width: $s-tablet) {
+			border-top: 5px solid transparent; 
+			padding: 30px 0 0; 
+		}
+
+		&:hover {
+			background: #fff;
+			color: #000;
+			@media screen and (min-width: $s-tablet) {
+				background: transparent;
+				color: #fff;
+				border-top: 5px solid #fff;  
+			}
+		}
+	}
+
+	.current-menu-item a {
+		background: #fff;
+		color: #000;
+		font-weight: 700;
+		@media screen and (min-width: $s-tablet) {
+			background: transparent;
+			color: #fff;
+			border-top: 5px solid #fff;  
+
+		}
+	}
+}

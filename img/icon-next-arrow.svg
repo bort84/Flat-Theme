@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="26px" viewBox="0 0 14 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>icon/arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M11.1749818,4.53410909 C11.0696727,4.4288 10.9242182,4.36363636 10.7636364,4.36363636 C10.4418909,4.36363636 10.1818182,4.62370909 10.1818182,4.94545455 C10.1818182,5.10603636 10.2469818,5.25149091 10.3522909,5.3568 L20.4352,16 L10.3522909,26.6432 C10.2469818,26.7490909 10.1818182,26.8945455 10.1818182,27.0545455 C10.1818182,27.3762909 10.4418909,27.6363636 10.7636364,27.6363636 C10.9242182,27.6363636 11.0696727,27.5717818 11.1749818,27.4658909 L21.6477091,16.4113455 C21.7530182,16.3060364 21.8181818,16.1605818 21.8181818,16 C21.8181818,15.8394182 21.7530182,15.6945455 21.6477091,15.5886545 L11.1749818,4.53410909 Z" id="path-1"></path>
+    </defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-1" transform="translate(-1251.000000, -3915.000000)">
+            <g id="arrow-right" transform="translate(1258.000000, 3928.000000) scale(-1, 1) translate(-1258.000000, -3928.000000) translate(1236.000000, 3906.000000)">
+                <g id="icon/arrow" transform="translate(22.000000, 22.000000) scale(-1, 1) translate(-22.000000, -22.000000) translate(6.000000, 6.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Combined-Shape" stroke="#FBFBFB" stroke-width="1" fill="#FBFBFB" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <rect id="Fill" fill="#FBFBFB" fill-rule="nonzero" mask="url(#mask-2)" x="0" y="0" width="32" height="32"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
